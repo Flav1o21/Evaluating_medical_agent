@@ -51,27 +51,6 @@ domain_translator
 
 The agent can iteratively call tools until no additional tool execution is requested.
 
-The LangGraph workflow is:
-
-```text
-User Query
-    │
-    ▼
-Diagnosis Agent
-    │
-    ├── Tool call requested
-    │        │
-    │        ▼
-    │      ToolNode
-    │        │
-    │        └──────────────┐
-    │                       │
-    └───────────────────────┘
-    │
-    ▼
-Final clinical response
-```
-
 ## Simulated Clinical Tools
 
 The current implementation includes the following tools.
